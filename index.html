@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>High Street International — DEMO B2B Catalogue Redesign</title>
+<meta name="description" content="DEMO B2B catalogue redesign for High Street International, Sialkot. Combat-sports categories and buyer enquiry — demo only, not the firm's live site.">
+<style>
+:root{--gold:#c9a227;--ink:#1c2b33;--muted:#5a6b72;--bg:#f4f6f5;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+.demo{background:#b3261e;color:#fff;text-align:center;padding:10px 14px;font-weight:700;font-size:14px}
+.demo small{display:block;font-weight:400;opacity:.9}
+header{background:#111;color:#fff}
+.wrap{max-width:1050px;margin:0 auto;padding:0 18px}
+.top{display:flex;gap:16px;align-items:center;padding:18px 0;flex-wrap:wrap}
+.logo{font-weight:800;font-size:26px;color:var(--gold);font-style:italic}
+h1{margin:0;font-size:24px}h1 small{display:block;font-size:15px;color:#dbe3e3;font-weight:500}
+nav{display:flex;gap:18px;padding:0 0 14px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:600}
+.hero{padding:34px 0 24px}.hero h2{font-size:32px;margin:0 0 10px;line-height:1.25}.hero p{font-size:18px;color:#334}
+.btn{display:inline-block;background:var(--gold);color:#111;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}
+.btn.outline{background:transparent;color:#111;border:2px solid #111}
+section{padding:26px 0}h2{font-size:26px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted)}
+form{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+label{display:block;font-weight:600;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cbd5d7;border-radius:10px;font:inherit}
+button{cursor:pointer;background:#111;color:#fff;border:0;padding:13px 22px;border-radius:10px;font-weight:700;font-size:16px}
+.ok{background:#e6f4ea;border:1px solid #a3d9a5;padding:12px;border-radius:10px;margin-top:14px;display:none}
+.note{font-size:14px;color:var(--muted)}footer{background:#111;color:#dbe3e3;padding:26px 0;margin-top:20px}footer a{color:#fff}
+@media(max-width:600px){.hero h2{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="demo">DEMO REDESIGN — NOT THE FIRM'S LIVE SITE <small>This is a sample B2B catalogue redesign for High Street International to review. Inquiries entered here are demo-only and are not sent to the firm.</small></div>
+<header><div class="wrap">
+<div class="top"><div class="logo">HSI — HIGH STREET INTERNATIONAL</div><div><h1>Combat Sports Manufacturer &amp; Exporter, Sialkot <small>B2B catalogue redesign — category pages &amp; buyer enquiry</small></h1></div></div>
+<nav><a href="#products">Products</a><a href="#inquiry">Send Inquiry</a><a href="#contact">Contact</a><a href="admin.html">Firm Login (Demo CMS)</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<h2>From product codes to qualified buyer enquiries.</h2>
+<p>The firm's live site shows products by code with “Add to Enquiry !” links and a simple contact form. This demo sharpens that: clear category landing pages (Boxing &amp; MMA, Krav Maga, Martial Arts, Fitness Equipment) and an inquiry form that asks product code, category, and country first, so the sales team can reply with the right custom range.</p>
+<a class="btn" href="#inquiry">Send Inquiry (Demo)</a>
+<a class="btn outline" href="#products">Browse Products</a>
+<p class="note">No prices are quoted in this demo — none were shown on the pages viewed. Custom products with embroidered/printed names and logos, brand names, and size charts are described on the live About page.</p>
+</section>
+
+<section id="products"><h2>Product Categories — as shown on the firm's site</h2>
+<div class="grid">
+<div class="card"><h3>Boxing &amp; MMA</h3><p>Example codes as shown: HSI-BM-001, HSI-BM-301.</p></div>
+<div class="card"><h3>Krav Maga</h3><p>Combat-sports equipment and apparel.</p></div>
+<div class="card"><h3>Martial Arts</h3><p>Example code as shown: HSI-MA-008.</p></div>
+<div class="card"><h3>Fitness Equipment</h3><p>Example code as shown: HSI-FE-4106.</p></div>
+<div class="card"><h3>Custom Products</h3><p>Custom-made products with embroidered/printed names and logos, brand names, and size charts.</p></div>
+</div>
+<p class="note">The live site states the company was established in 2010 — this demo repeats no new claim about company size, employees, or markets.</p>
+</section>
+
+<section id="inquiry"><h2>Send Inquiry — demo form</h2>
+<form id="inqForm">
+<label for="iname">Name</label><input id="iname" required placeholder="Full name">
+<label for="iemail">Email Address</label><input id="iemail" type="email" required placeholder="you@example.com">
+<label for="iphone">Phone</label><input id="iphone" placeholder="Phone number (optional)" inputmode="tel">
+<label for="icategory">Category</label><select id="icategory"><option>Boxing &amp; MMA</option><option>Krav Maga</option><option>Martial Arts</option><option>Fitness Equipment</option><option>Custom Product</option><option>Other</option></select>
+<label for="icode">Product Code (if known)</label><input id="icode" placeholder="e.g. HSI-BM-001 (optional)">
+<label for="icountry">Country</label><input id="icountry" placeholder="Country (optional)">
+<label for="imsg">Message</label><textarea id="imsg" rows="3" required placeholder="Describe what you need"></textarea>
+<p><button type="submit">Submit Inquiry (Demo)</button></p>
+<div class="ok" id="okMsg">Thank you — your demo inquiry has been saved in this browser only. In a live site, the firm would reply by email. This demo does not send anything to the firm.</div>
+<p class="note">Demo notice: this form stores the inquiry in your browser's local storage only. There is no server, no real login, and no payment or notification system in this demo. A production site would need a backend / WordPress build. No price, sample, or delivery outcome is promised here.</p>
+</form></section>
+
+<section id="contact"><h2>Contact</h2>
+<div class="grid">
+<div class="card"><h3>Address</h3><p>Qasim Ali Road, Badal Street, Islam pura, Sialkot–51310, Pakistan</p><p class="note">The embedded map on the live Contact page shows “Rangpura Rd, Rangpura Sialkot” — an unresolved discrepancy, so both wordings are kept separate and neither is presented as the single confirmed address here beyond the site text above.</p></div>
+<div class="card"><h3>Phones &amp; WhatsApp</h3><p><a href="tel:+923338710691">+92 333 8710691</a> &middot; <a href="tel:+923338646045">+92 333 8646045</a><br><a href="https://wa.me/+923338710691">WhatsApp: wa.me/+923338710691</a><br><a href="https://api.whatsapp.com/send?phone=923338646045">WhatsApp: api.whatsapp.com/send?phone=923338646045</a></p></div>
+<div class="card"><h3>Emails</h3><p><a href="mailto:info@highstreetint.com">info@highstreetint.com</a><br><a href="mailto:sales@highstreetint.com">sales@highstreetint.com</a><br><a href="mailto:aqeel@highstreetint.com">aqeel@highstreetint.com</a></p></div>
+<div class="card"><h3>Director (as shown)</h3><p>Muddsar Parvez — Director, High Street International (LinkedIn, Feb 2011 – Present)</p><p class="note">LinkedIn About sign-off uses the spelling “Muddasar Pervez” — a different spelling, kept separate. No company LinkedIn page was verified; the LinkedIn link found is a personal profile.</p></div>
+<div class="card"><h3>Follow</h3><p><a href="https://www.instagram.com/high_street_international/">Instagram — @high_street_international, 4,591 followers</a><br><a href="https://www.facebook.com/people/High-Street-International/100064000756391/">Facebook — High Street International (tracker-ID page), 240 followers</a></p><p class="note">Website footer links to a different Facebook URL (…-1127504140615413) — do not assume it is the same page without further verification.</p></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">
+<p><strong>DEMO — High Street International B2B catalogue sample.</strong> Built for review only. Not affiliated with, and not published by, the firm. Real buyer data must not be entered in this demo.</p>
+<p><a href="admin.html">Firm Login (Demo CMS)</a> — front-end demo only; login is UI-only, no real authentication.</p>
+</div></footer>
+<script>
+const KEY='highstreet_demo_v1';
+function getData(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}}
+document.getElementById('inqForm').addEventListener('submit',e=>{e.preventDefault();
+  const d=getData(); d.inquiries=d.inquiries||[];
+  d.inquiries.push({name:document.getElementById('iname').value,email:document.getElementById('iemail').value,phone:document.getElementById('iphone').value,category:document.getElementById('icategory').value,code:document.getElementById('icode').value,country:document.getElementById('icountry').value,message:document.getElementById('imsg').value,status:'Pending',at:new Date().toISOString()});
+  localStorage.setItem(KEY,JSON.stringify(d)); document.getElementById('okMsg').style.display='block'; e.target.reset();});
+</script>
+</body>
+</html>
